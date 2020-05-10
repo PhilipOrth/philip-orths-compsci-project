@@ -1,8 +1,15 @@
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSprite) {
+    game.showLongText("Should have gone to Harrow", DialogLayout.Bottom)
     game.over(false)
 })
+function doSomething (If_monkey_win_say_go_to_harrow: string) {
+	
+}
+info.onCountdownEnd(function () {
+    game.over(true)
+})
 scene.setBackgroundColor(2)
-info.startCountdown(20)
+info.startCountdown(15)
 let Monkey = sprites.create(img`
 . . . . f f f f f . . . . . . . 
 . . . f e e e e e f . . . . . . 
