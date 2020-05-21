@@ -2,9 +2,6 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Player, function (sprite, otherSp
     game.showLongText("Should have gone to Harrow", DialogLayout.Bottom)
     game.over(false)
 })
-function doSomething (If_monkey_win_say_go_to_harrow: string) {
-	
-}
 info.onCountdownEnd(function () {
     game.over(true)
 })
@@ -60,3 +57,4 @@ Human.setVelocity(20, 20)
 Monkey.setVelocity(50, 50)
 Human.x = 5
 game.showLongText("Use keypad to avoid the human", DialogLayout.Bottom)
+Monkey.setFlag(SpriteFlag.StayInScreen, true)
